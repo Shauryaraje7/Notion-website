@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="question-to-reach.css">
+    <title>Simple Form</title>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="header" >
+        <h1 class="main-title">NOTION FAQs</h1>
+        <h2 class="sub-title">Responses To Your Questions</h2>
+      </div>
+      <section class="content">
+        <aside class="sidebar">
+          <h3>Sort By Subject</h3>
+          <ul>
+            <li><a href="index.html">General</a></li>
+            <li><a href="about-notion.html">About Notion</a></li>
+            <li><a href="recruitment.html">Recruitment</a></li>
+          </ul>
+        </aside>
+        <main class="faq-section">
+          <h2 id="general">General</h2>
+          <div class="faq">
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleDropdown(this)">
+                What is Notion Community at VIT Bhopal? <span class="plus">+</span>
+              </div>
+              <div class="faq-answer">
+                The Notion Community at VIT Bhopal is a group dedicated to promoting productivity through Notion.
+              </div>
+            </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleDropdown(this)">
+                Who can join the Notion Community? <span class="plus">+</span>
+              </div>
+              <div class="faq-answer">
+                Anyone who is interested in learning new things.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleDropdown(this)">
+                What kind of events do you organize? <span class="plus">+</span>
+              </div>
+              <div class="faq-answer">
+                We organize workshops, and various sessions on productivity
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleDropdown(this)">
+                Do I need prior experience with Notion to join? <span class="plus">+</span>
+              </div>
+              <div class="faq-answer">
+                No prior experience is needed.
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" onclick="toggleDropdown(this)">
+                How do I sign up for the events? <span class="plus">+</span>
+              </div>
+              <div class="faq-answer">
+                You can sign up through our website.
+              </div>
+            </div>
+          </div>
+          </div>
+        </main>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="questions-to-reach-out">
+
+        <section class="left-questions-to-reach-out">
+            <div class="text-questions-to-reach-out">
+                <h1>Questions</h1>
+                <h2>Reach out</h>
+            </div>
+
+            <img src="assets/img.png" alt="">
+        </section>
+        <section class="right-questions-to-reach-out">
+            <form class="form-container">
+                <div class="first-two-questions">
+                    <div class="form-row">
+                        <label   for="first-name"><h1>First Name</h1></label>
+                        <input type="text" id="first-name" class="dashed-input" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name"><h1>Last Name</h1></label>
+                        <input type="text" id="last-name" class="dashed-input" required>
+                    </div>
+                </div>
+                <div class="other-two-questions">
+                <div class="form-row">
+                    <label for="vit-mail"><h1>Vit Email ID</h1></label>
+                    <input type="email" id="vit-mail" class="dashed-input" required>
+                </div>
+                <div class="form-row">
+                    <label for="query"><h1>Querry</h1></label>
+                    <input type="text" id="query" class="dashed-input" required>
+                </div>
+            </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+
+
+
+
+        </section>
+
+
+    </div>
+</body>
+<script src="questions-to-reachout.js"></script>
+
+</html>

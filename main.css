@@ -1,0 +1,510 @@
+/* Reset default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+
+
+
+
+.heading-for-sponcers {
+  margin-top: 10vh;
+}
+
+/* Navbar styles */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  border-radius: 15px;
+  /* Rounded corners */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Subtle border */
+  box-shadow: 0 9px 40px rgba(0, 0, 0, 0.1);
+  /* Optional shadow */
+  padding: 10px 20px;
+  position: fixed;
+  /* Fixed to the viewport */
+  top: 15px;
+  /* Ensures it stays at the top */
+  left: 50%;
+  /* Start at the center horizontally */
+  transform: translateX(-50%);
+  /* Shift back by half the width */
+  z-index: 2;
+  width: 94%;
+
+
+}
+
+.logo-custom {
+  color: rgb(0, 0, 0);
+  /* font-size: 24px; */
+  font-weight: bold;
+  height: 9vh;
+  transform: scale(1.1);
+}
+
+.menu-icon-custom {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links-custom {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links-custom li {
+  margin: 0 15px;
+}
+
+.nav-links-custom a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links-custom a:hover {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+
+/* Responsive for Android (Small screens) */
+/* Responsive for Android (Small screens) */
+@media (max-width: 768px) {
+  .menu-icon-custom {
+    display: block;
+  }
+
+  .nav-links-custom {
+    position: absolute;
+    top: 101px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.1);
+    /* Glassmorphism background */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle border */
+    box-shadow: 0 9px 40px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .nav-links-custom.open {
+    height: 250px;
+    /* Adjust height when menu is open */
+  }
+
+  .nav-links-custom li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .img-first-page {
+    display: none;
+  }
+
+
+}
+
+
+
+
+/* ==============================first page starts starts=================== */
+
+
+.first-page {
+  margin-top: 23vh;
+}
+
+.img-first-page {
+  transform: scale(1.5);
+}
+
+.top-text-first-page {
+  font-size: 60px;
+}
+
+.bottom-text-first-page {
+  font-size: 40px;
+}
+
+
+
+
+/* ==============================first page ends=================== */
+/* ==============================about us starts=================== */
+
+
+
+
+/* Base Styles */
+.notion-about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  /* Allows wrapping for responsiveness */
+  margin-top: 30vh;
+  margin: auto;
+}
+
+.notion-text-content {
+  margin: auto;
+  width: 40%;
+  text-align: left;
+}
+
+.notion-text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.notion-text-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.notion-view-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 21px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.notion-view-more-btn:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid black;
+  border-radius: 21px;
+}
+
+.notion-image-content {
+  width: 50%;
+  text-align: right;
+}
+
+.notion-image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .notion-about-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notion-text-content,
+  .notion-image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .notion-text-content h1 {
+    font-size: 2rem;
+  }
+
+  .notion-text-content p {
+    font-size: 1rem;
+  }
+
+  .notion-view-more-btn {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+/* ==============================about us endss=================== */
+/* =====================main page ====================================== */
+
+.imgs {
+  display: flex;
+}
+
+.first-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title1 {
+  position: relative;
+  transform: scale(0.8) rotate(-50deg);
+  top: 15vh;
+
+
+
+}
+
+
+.title {
+  animation: float 4s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  30% {
+    transform: translateY(-20px) translateX(3px);
+  }
+
+  50% {
+    transform: translateY(-20px) translateX(-3px);
+  }
+
+  70% {
+    transform: translateY(-20px) translateX(3px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+
+.title2 {
+  position: relative;
+  transform: scale(0.8) rotate(-30deg);
+  top: 20vh;
+  z-index: 1;
+
+}
+
+.sitting-man {
+  transform: scale(0.6);
+  position: absolute;
+  top: 7%;
+}
+
+.running-man {
+  position: absolute;
+  transform: scale(0.6);
+  right: 10vh;
+  top: 40vh;
+}
+
+
+
+
+
+/* =================================footer======================== */
+
+
+
+
+.footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  padding: 20px 30px;
+  margin-top: 20vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.brand h1,
+.brand p {
+  color: rgb(0, 0, 0);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pages ul,
+.navigate ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pages li,
+.navigate li {
+  margin: 5px 0;
+}
+
+.subscribe input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.footer-bottom a {
+  color: black;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Add underline and pointer on hover */
+.pages ul li,
+.navigate ul li {
+  margin: 5px 0;
+  cursor: pointer;
+  /* Show pointer cursor */
+  position: relative;
+  /* For the underline effect */
+}
+
+.pages ul li::after,
+.navigate ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  /* Thickness of the underline */
+  background-color: rgb(255, 255, 255);
+  /* Color of the underline */
+  transition: width 0.3s ease-in-out;
+  /* Smooth transition */
+}
+
+.pages ul li:hover::after,
+.navigate ul li:hover::after {
+  width: 100%;
+  /* Show underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    justify-content: center;
+  }
+
+  .icon {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .group-photo-custom {
+    display: none;
+  }
+
+  .centered-content-custom h1 {
+    font-family: 'Caveat', cursive;
+    font-style: Caveat;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: px;
+
+  }
+}
